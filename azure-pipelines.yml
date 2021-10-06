@@ -23,6 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
+	buildcontext: WebApplication1
         command: build
         dockerfile: '$(Build.SourcesDirectory)/WebApplication1/Dockerfile'
         tags: |
