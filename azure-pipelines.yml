@@ -25,6 +25,6 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/WebApplication1/Dockerfile'
-        buildContext: /
+        buildContext: WebApplication1
         tags: |
           $(tag)
